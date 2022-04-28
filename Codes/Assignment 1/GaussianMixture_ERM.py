@@ -91,7 +91,7 @@ print(ConfusionMatrix)
 # Plot Classification results
 fig = plt.figure()
 ax = plt.axes(projection = "3d")
-ax.scatter(X[(label==2) & (Decision == 1),0],X[(label==2) & (Decision == 1),1],X[(label==2) & (Decision == 1),2], color ='red', marker = 'o')
+ax.scatter(X[(label==2) & (Decision == 1),0],X[(label==2) & (Decision == 1),1],X[(label==2) & (Decision == 1),2],color ='red', marker = 'o')
 ax.scatter(X[(label==2) & (Decision == 2),0],X[(label==2) & (Decision == 2),1],X[(label==2) & (Decision == 2),2],color ='green', marker = 'o')
 ax.scatter(X[(label==2) & (Decision == 0),0],X[(label==2) & (Decision == 0),1],X[(label==2) & (Decision == 0),2],color ='red', marker = 'o')
 ax.scatter(X[(label==1) & (Decision == 1),0],X[(label==1) & (Decision == 1),1],X[(label==1) & (Decision == 1),2],color ='green', marker = 's')
